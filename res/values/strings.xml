@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, MainActivity!</string>
+    <string name="app_name">Audio Simulator</string>
+    <string name="default_min_buffer_size">0</string>
+    <string name="audio_encoding_label">Audio Encoding:</string>
+    <string name="audio_source_label">Audio Source:</string>
+    <string name="buffer_size_label">Buffer Size:</string>
+    <string name="bytes_streamed_label">Bytes streamed:</string>
+    <string name="streaming_label">Streaming:</string>
+    <string name="show_actual_settings_label">Show actual state</string>
+    <string name="read_audio_label">Start streaming</string>
+    <string name="capture_audio_label">Start recording</string>
+    <string name="init_audio_label">Initialize audio</string>
+    <string name="stop_button_label">Stop</string>
+    <string name="go_button_label">Listen</string>
+    <string name="channel_count_label">Channel Count:</string>
+    <string name="recording_status_label">Recording:</string>
+    <string name="status_label">State:</string>
+    <string name="min_buffer_label">Minimum Buffer:</string>
+    <string name="channel_label">Channel:</string>
+    <string name="sampling_label">Sampling Rate:</string>
+    <string name="listening_prompt">listening&#8230;</string>
+    <string name="save_button_label">Save</string>
+    <string name="channel_configuration_label">Channel Configuration</string>
+
+</resources>
+

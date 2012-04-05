@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/add" android:title="Add" android:visible="true"></item>
+    <item android:id="@+id/remove" android:title="Kill" android:visible="false"></item>
+    <item android:id="@+id/select" android:title="Select items" android:visible="false"></item>
+    <item android:id="@+id/done" android:title="Done selecting" android:visible="false"></item>
+    <item android:id="@+id/flush" android:title="Kill all recordings" android:visible="true"></item>
+    <item android:id="@+id/trial" android:title="Time trials" android:visible="true"></item>
+    <item android:id="@+id/exit" android:title="Exit" android:visible="true"></item>
+</menu>

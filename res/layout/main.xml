@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:layout_gravity="bottom" >
+
+    <!-- declarations for the labels  -->
+    
+    <LinearLayout
+        android:id="@+id/headings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="5dp"
+        android:layout_gravity="top"
+        >
+
+	    <TextView
+	        android:id="@+id/heading_idle"
+	        android:text="" 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:visibility="gone"
+	        />
+
+	    <TextView
+	        android:id="@+id/heading_listening"
+	        android:text="@string/listening_prompt" 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:visibility="gone"
+	        />
+	    
+	    <TextView
+	        android:id="@+id/heading_title"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:visibility="gone"
+	        />
+	    
+	    	</LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/settings_panel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dip" >
+
+        <!-- declarations for the labels  -->
+        
+        <TextView
+            android:id="@+id/source_label"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="@string/audio_source_label" />
+
+        <TextView
+            android:text="@string/sampling_label"
+            android:layout_below="@id/source_label"
+            android:layout_alignRight="@id/source_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:id="@+id/sampling_label"
+             />
+
+        <TextView
+            android:text="@string/channel_label"
+            android:layout_below="@id/sampling_label"
+            android:layout_alignRight="@id/source_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:id="@+id/channel_label"
+             />
+
+        <TextView
+            android:text="@string/audio_encoding_label"
+            android:layout_below="@id/channel_label"
+            android:layout_alignRight="@id/source_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:id="@+id/encoding_label"
+             />
+
+        <TextView
+            android:text="@string/min_buffer_label"
+            android:layout_below="@id/encoding_label"
+            android:layout_alignRight="@id/source_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:id="@+id/min_buffer_label"
+             />
+
+        <TextView
+            android:text="@string/buffer_size_label"
+            android:layout_below="@id/min_buffer_label"
+            android:layout_alignRight="@id/source_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:id="@+id/buffer_label"
+             />
+
+        <!-- declarations for the values  -->
+        
+        <TextView
+            android:id="@+id/source"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/min_buffer_label"
+            android:layout_alignBaseline="@id/source_label"
+            android:layout_alignBottom="@+id/source_label"
+            android:layout_marginLeft="16dp"
+            />
+
+        <TextView
+            android:id="@+id/sampling_rate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/sampling_label"
+            android:layout_alignBaseline="@+id/sampling_label"
+            android:layout_alignBottom="@+id/sampling_label"
+            android:layout_alignLeft="@+id/source"
+            />
+
+        <TextView
+            android:id="@+id/channel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/channel_label"
+            android:layout_alignBaseline="@+id/channel_label"
+            android:layout_alignBottom="@+id/channel_label"
+            android:layout_alignLeft="@+id/source"
+            />
+
+        <TextView
+            android:id="@+id/encoding"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/encoding_label"
+            android:layout_alignBaseline="@+id/encoding_label"
+            android:layout_alignBottom="@+id/encoding_label"
+            android:layout_alignLeft="@+id/source"
+            />
+
+        <TextView
+            android:id="@+id/min_buffer_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/min_buffer_label"
+            android:layout_alignBaseline="@+id/min_buffer_label"
+            android:layout_alignBottom="@+id/min_buffer_label"
+            android:layout_alignLeft="@+id/source"
+            />
+
+        <TextView
+            android:id="@+id/buffer_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/buffer_label"
+            android:layout_alignBaseline="@+id/buffer_label"
+            android:layout_alignBottom="@+id/buffer_label"
+            android:layout_alignLeft="@+id/source"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/status_panel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dip" >
+
+        <!-- declarations for the labels  -->
+        
+        <TextView
+            android:id="@+id/status_label"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/status_label"
+            android:gravity="right"
+            android:text="@string/status_label"
+            />
+
+        <TextView
+            android:id="@+id/recording_status_label"
+            android:layout_below="@id/status_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/status_label"
+            android:gravity="right"
+            android:text="@string/recording_status_label"
+            />
+
+        <TextView
+            android:id="@+id/channel_count_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/recording_status_label"
+            android:layout_alignRight="@id/status_label"
+            android:gravity="right"
+            android:text="@string/channel_count_label"
+            />
+
+        <TextView
+            android:id="@+id/streaming_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/channel_count_label"
+            android:layout_alignRight="@id/status_label"
+            android:gravity="right"
+            android:text="@string/streaming_label"
+            />
+
+        <TextView
+            android:id="@+id/bytes_streamed_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/streaming_label"
+            android:layout_alignRight="@id/status_label"
+            android:gravity="right"
+            android:text="@string/bytes_streamed_label" 
+            />
+
+        <!-- declarations for the values  -->
+        
+        <TextView
+            android:id="@+id/status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/status_label"
+            android:layout_alignBaseline="@id/status_label"
+            android:layout_alignBottom="@+id/status_label"
+            android:layout_marginLeft="16dp"
+            />
+
+        <TextView
+            android:id="@+id/recording_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/recording_status_label"
+            android:layout_alignBaseline="@id/recording_status_label"
+            android:layout_alignBottom="@+id/recording_status_label"
+            android:layout_marginLeft="16dp"
+            />
+
+        <TextView
+            android:id="@+id/channel_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/channel_count_label"
+            android:layout_alignBaseline="@id/channel_count_label"
+            android:layout_alignBottom="@+id/channel_count_label"
+            android:layout_marginLeft="16dp"
+            />
+
+        <TextView
+            android:id="@+id/streaming"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/streaming_label"
+            android:layout_alignBaseline="@id/streaming_label"
+            android:layout_alignBottom="@+id/streaming_label"
+            android:layout_marginLeft="16dp"
+            />
+
+        <TextView
+            android:id="@+id/bytes_streamed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/bytes_streamed_label"
+            android:layout_alignBaseline="@id/bytes_streamed_label"
+            android:layout_alignBottom="@+id/bytes_streamed_label"
+            android:layout_marginLeft="16dp"
+            />
+
+        </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/buttons"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="bottom" >
+
+	    <Button
+	        android:id="@+id/go_button"
+	        android:text="@string/go_button_label"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:visibility="gone" 
+	         />
+	
+	    <Button
+	        android:id="@+id/stop_button"
+	        android:text="@string/stop_button_label"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:visibility="gone" 
+	        />
+
+	    <Switch
+	        android:id="@+id/init_audio"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:text="@string/init_audio_label"
+	        android:paddingBottom="10dp"
+	        />
+
+	    <Switch
+	        android:id="@+id/capture_audio"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:text="@string/capture_audio_label"
+	        android:paddingBottom="10dp"
+	        />
+
+	    <Switch
+	        android:id="@+id/read_audio"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:text="@string/read_audio_label"
+	        android:paddingBottom="10dp"
+	        />
+
+	    <Switch
+	        android:id="@+id/show_actual"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:text="@string/show_actual_settings_label"
+	        android:paddingBottom="10dp"
+	        />
+    
+    </LinearLayout>
+
+</LinearLayout>

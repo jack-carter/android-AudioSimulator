@@ -17,7 +17,7 @@ import com.maniac.tester.audio.Audio;
 import com.maniac.tester.audio.Recording;
 import com.maniac.tester.audio.Recordings;
 import com.maniac.tester.ui.helpers.BasicListActivity;
-import com.maniac.testers.R;
+import com.maniac.tester.R;
 
 /**
  * @author J Carter

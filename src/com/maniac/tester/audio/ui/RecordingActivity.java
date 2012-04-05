@@ -11,7 +11,7 @@ import com.maniac.tester.helpers.Condition;
 import com.maniac.tester.helpers.Log;
 import com.maniac.tester.helpers.ValueHolder;
 import com.maniac.tester.ui.helpers.*;
-import com.maniac.testers.R;
+import com.maniac.tester.R;
 
 
 import android.app.Activity;

@@ -13,7 +13,7 @@ import android.widget.ArrayAdapter;
 import android.widget.ListAdapter;
 
 import com.maniac.tester.helpers.Log;
-import com.maniac.testers.R;
+import com.maniac.tester.R;
 
 /**
  * @author J Carter

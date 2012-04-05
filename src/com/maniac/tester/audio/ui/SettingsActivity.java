@@ -8,7 +8,7 @@ import com.maniac.tester.audio.Recordings;
 import com.maniac.tester.audio.Settings;
 import com.maniac.tester.audio.values.ISettings;
 import com.maniac.tester.helpers.NamedValue;
-import com.maniac.testers.R;
+import com.maniac.tester.R;
 
 import android.app.Activity;
 import android.os.Bundle;
